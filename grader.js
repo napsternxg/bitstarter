@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-Automatically grade files for the presence of specified HTML tags/attributes.
+	Automatically grade files for the presence of specified HTML tags/attributes.
 Uses commander.js and cheerio. Teaches command line application development
 and basic DOM parsing.
 
@@ -43,7 +43,7 @@ var buildfn = function() {
         if (result instanceof Error) {
             console.error('Error: ' + util.format(response.message));
         } else {
-            console.error("Wrote %s", TEMP_URL_HTMLFILE_DEFAULT);
+//            console.error("Wrote %s", TEMP_URL_HTMLFILE_DEFAULT);
             fs.writeFileSync(TEMP_URL_HTMLFILE_DEFAULT, result);
         }
     };
